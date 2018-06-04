@@ -2,6 +2,7 @@
 
 import math
 
+#menu skeleton
 def menu():
     print('                 Menu\r')
     print('B - Determines if a particular value is prime\r')
@@ -9,6 +10,7 @@ def menu():
     print('M - Prints the Prime Calculator menu\r')
     print('Q - Exits program\n\n')
 
+#checks if value given is prime
 def isprime(n):
     if n in [0,1]:
         return False
@@ -22,6 +24,7 @@ def isprime(n):
 
     return True
 
+#outputs prime list
 def primeList(x):
     prime = []
     for i in range(x+1):
@@ -30,7 +33,7 @@ def primeList(x):
     print(prime)
     print('\n')
 
-
+#main
 print('\n')
 print('             Prime Calculator\r')
 print('___________________________________________\n\n')
