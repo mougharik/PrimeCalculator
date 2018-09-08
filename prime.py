@@ -34,30 +34,33 @@ def primeList(x):
     print('\n')
 
 #main
-print('\n')
-print('             Prime Calculator\r')
-print('___________________________________________\n\n')
-
-loop = 1
-while loop == 1:
-    menu()
-    choice = input('>')
+def main()
     print('\n')
-    if (choice == 'b') or (choice == 'B'):
-        x = int(input('Enter a positive integer: '))
-        if (isprime(x)):
-            print(str(x) + ' is prime\n')
+    print('             Prime Calculator\r')
+    print('___________________________________________\n\n')
+
+    loop = 1
+    while loop == 1:
+        menu()
+        choice = input('>')
+        print('\n')
+        if (choice == 'b') or (choice == 'B'):
+            x = int(input('Enter a positive integer: '))
+            if (isprime(x)):
+                print(str(x) + ' is prime\n')
+            else:
+                print(str(x) + ' is not prime\n')
+        elif (choice == 'l') or (choice == 'L'):
+            x = int(input('Enter a positive integer: '))
+            primeList(x)
+        elif (choice == 'm') or (choice == 'M'):
+            continue
+        elif (choice == 'q') or (choice == 'Q'):
+            loop = 0
         else:
-            print(str(x) + ' is not prime\n')
-    elif (choice == 'l') or (choice == 'L'):
-        x = int(input('Enter a positive integer: '))
-        primeList(x)
-    elif (choice == 'm') or (choice == 'M'):
-        continue
-    elif (choice == 'q') or (choice == 'Q'):
-        loop = 0
-    else:
-        print('Please enter a valid menu option!')
+            print('Please enter a valid menu option!')
 
 
+if __name__ == "__main__":
+    main()
 
