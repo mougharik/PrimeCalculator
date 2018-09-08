@@ -34,7 +34,7 @@ def primeList(x):
     print('\n')
 
 #main
-def main()
+def main():
     print('\n')
     print('             Prime Calculator\r')
     print('___________________________________________\n\n')
